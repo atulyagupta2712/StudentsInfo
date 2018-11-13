@@ -81,6 +81,7 @@ img{
 }
 
 @media(max-width: 992px){
+
   .navbar-nav{
       margin-left: 40%;
   }
@@ -101,8 +102,17 @@ img{
   }
 }
 @media(max-width: 786px){
-    table{
+    nav{
         width: 100% !important;
+    }
+    navbar-toggler{
+        margin-left:  5% !important;
+    }
+   td{
+       width: 10% !important;
+   }
+    table{
+        width: 120% !important;
     }
     h1{
         font-size: 31px;
@@ -112,7 +122,7 @@ img{
         width: 72% !important;
     }
     .btn1{
-        margin: 3% 9%;
+        margin: 3%  8% !important;
         font-size: 19px !important;
     }
     .navbar a{
