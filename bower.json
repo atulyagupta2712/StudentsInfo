@@ -6,7 +6,7 @@
   "description": "It is a CRUD application built in angular JS",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  
   "ignore": [
     "**/.*",
     "node_modules",
