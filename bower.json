@@ -1,0 +1,24 @@
+{
+  "name": "studentsapp",
+  "authors": [
+    "Atulya <atulyagupta2712@gmail.com>"
+  ],
+  "description": "It is a CRUD application built in angular JS",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "angularfire": "^2.3.0",
+    "angular-route": "^1.7.5",
+    "font-awesome": "^5.5.0"
+  }
+}

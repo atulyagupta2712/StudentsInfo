@@ -1,0 +1,38 @@
+
+
+<div class="container-fluid" ng-controller="mainctrl">
+    <div class="row">
+        <div class="col-md-4">
+                <h1>Student List</h1>
+        </div>
+        <div class="col-md-4">
+           <div class="form-group">
+                <label class="label1" for="">Search</label>
+                <input type="text" placeholder="Search here.." class="form-control size" ng-model="search">
+           </div>
+        </div>
+        <div class="col-md-4 bg-success text-white" ng-if="msg">
+           <h4>{{msg}}</h4>
+        </div>
+    </div>
+        <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Year</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="student in students | filter: search">
+                        <td>{{student.name}}</td>
+                        <td>{{student.dept}}</td>
+                        <td>{{student.year}}</td>
+                        <td> <button class="btn btn-info" ng-click="onedit(student.$id)"><i class="far fa-edit"></i></button> </td>
+                        <td><button class="btn btn-danger" ng-click="ondelete(student)"><i class="fas fa-trash"></i></button></td>   
+                    </tr>
+                </tbody>
+            </table>
+</div>

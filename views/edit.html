@@ -1,0 +1,43 @@
+
+
+<div class="container-fluid" ng-controller="editctrl">
+  <div class="row">
+    <div class="col-md-7">
+        <h1>Student Edit Form</h1>
+    </div>
+    <div class="col-md-5">
+        <h3 class=" bg-success text-white" ng-if="message">{{message}}</h3>
+    </div>
+  </div>
+       
+        <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" ng-model="student.name" class="form-control" id="inputEmail3" placeholder="Enter the name..">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Department</label>
+              <div class="col-sm-10">
+                <input type="text" ng-model="student.dept" class="form-control" id="inputPassword3" placeholder="Enter the department..">
+              </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Year</label>
+                <div class="col-sm-10">
+                  <input type="number" ng-model="student.year" class="form-control" id="inputPassword3" placeholder="Enter the year of the student..">
+                </div>
+              </div>
+            
+            <!-- <div class="form-group row"> -->
+             
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" ng-click="editStudent()"class="btn btn-success btn1">Update</button>
+                <a ng-href="#/" class="btn btn-danger btn1">Cancel</a>
+         
+              </div>
+            </div>
+          </form>
+    </div>

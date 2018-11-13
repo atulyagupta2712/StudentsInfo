@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link rel="stylesheet" href="css/design.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+    <script src="scripts/utils/firebase.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/utils/constants.js"></script>
+    <script src="scripts/controllers/studentctrl.js"></script>
+    <script src="scripts/controllers/homectrl.js"></script>
+    <script src="scripts/controllers/editctrl.js"></script>
+    <script src="scripts/routing.js"></script>
+</head>
+<body ng-app="crudapp">
+        <div ng-include="'views/nav.html'">
+
+        </div>
+    <div>
+     
+        <ng-view></ng-view>
+    </div>
+   
+</body>
+</html>
